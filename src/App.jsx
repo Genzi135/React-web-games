@@ -1,13 +1,16 @@
 
+import { Route, Routes } from 'react-router-dom'
 import './App.css'
+import Dashboard from './pages'
 import TikTakToe from './pages/tik-tak-toe'
 
 function App() {
 
   return (
-    <>
-      <TikTakToe />
-    </>
+    <Routes>
+      <Route path='/' element={<Dashboard />} />
+      <Route path='/tic-tac-toe' element={<TikTakToe />} />
+    </Routes>
   )
 }
 

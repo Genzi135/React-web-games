@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import './index.css';
 
 export default function TikTakToe() {
@@ -17,7 +17,7 @@ export default function TikTakToe() {
             const newBoard = [...board];
             newBoard[row][col] = player;
             setBoard(newBoard);
-            setPlayer(player === 'X' ? 'O' : 'X'); // Chuyển lượt
+            setPlayer(player === 'X' ? 'O' : 'X');
             checkWinner(newBoard);
         }
     };
@@ -45,7 +45,6 @@ export default function TikTakToe() {
             }
         }
 
-        // Kiểm tra nếu toàn bộ bảng đã được chọn mà không có người chiến thắng
         let isBoardFull = true;
         for (let i = 0; i < board.length; i++) {
             for (let j = 0; j < board[i].length; j++) {
@@ -74,7 +73,7 @@ export default function TikTakToe() {
         resetGame()
         setShowModal(false);
         if (winner) {
-            resetGame(); // Reset trò chơi nếu có người chiến thắng
+            resetGame();
         }
     };
 
@@ -82,8 +81,7 @@ export default function TikTakToe() {
         <div>
             <div className='tittle'>
                 <label id='title'>
-                    Tik-Tac-Toe
-                    {/* <label className='o'>o</label> <label className='x'>x</label> */}
+                    <label className='o'>o</label> <label className='x'>x</label>
                 </label>
             </div>
             <div className='column'>
@@ -105,7 +103,7 @@ export default function TikTakToe() {
                     <div className='modal'>
                         <div className='modal-content'>
                             <span className='close' onClick={closeModal}>&times;</span>
-                            {winner ? <p>Winner: {winner}</p> : <p>No winner</p>}
+                            {winner ? <p>Winner:  <label className={`${winner === 'X' ? 'x' : 'o'}`}>{winner}</label></p> : <p>No winner</p>}
                         </div>
                     </div>
                 )}

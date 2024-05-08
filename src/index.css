@@ -1,0 +1,47 @@
+body,
+html {
+    width: 90vw;
+    height: 90vh;
+    color: white;
+    background-color: #010515;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Press Start 2P", cursive;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-game {
+    width: 50px;
+    height: 50px;
+    border: 5px solid white;
+    position: relative;
+    padding: 5px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.icon-game:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px white;
+}
+
+.oo {
+    color: white;
+    font-size: 30px;
+    text-shadow: 0 0 10px violet, 0 0 20px violet, 0 0 40px violet, 0 0 100px #ee82ee;
+}
+
+.xx {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: white;
+    font-size: 30px;
+    text-shadow: 0 0 10px aqua, 0 0 20px aqua, 0 0 40px aqua, 0 0 100px #00ffff;
+}
