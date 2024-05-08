@@ -7,14 +7,17 @@ export default function Dashboard() {
                 Genzi&apos;s Games build with React
                 <img className='icon' src={reactIcon} />
             </label>
-            <Link to={"/tic-tac-toe"}>
-                <div className='container'>
-                    <div className='icon-game'>
-                        <span className='oo'>O</span>
-                        <span className='xx'>X</span>
+            <div className='icon-container'>
+                <Link to={"/tic-tac-toe"}>
+                    <div className='container'>
+                        <div className='icon-game'>
+                            <span className='oo'>O</span>
+                            <span className='xx'>X</span>
+                        </div>
                     </div>
-                </div>
-            </Link>
+                </Link>
+                <label>Tic Tac Toe</label>
+            </div>
         </div>
     )
 }
