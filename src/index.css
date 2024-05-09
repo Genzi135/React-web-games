@@ -57,3 +57,30 @@ html {
     font-size: 30px;
     text-shadow: 0 0 10px aqua, 0 0 20px aqua, 0 0 40px aqua, 0 0 100px #00ffff;
 }
+
+.icon-sudoku-table {
+    border-collapse: collapse;
+    color: white;
+    font-size: 12px;
+}
+
+.icon-sudoku-table td {
+    border: 1px solid white;
+    padding: 2px;
+}
+
+.icon-sudoku-table tr:first-child td {
+    border-top: none;
+}
+
+.icon-sudoku-table tr:last-child td {
+    border-bottom: none;
+}
+
+.icon-sudoku-table tr td:first-child {
+    border-left: none;
+}
+
+.icon-sudoku-table tr td:last-child {
+    border-right: none;
+}

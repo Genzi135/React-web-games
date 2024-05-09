@@ -18,6 +18,33 @@ export default function Dashboard() {
                 </Link>
                 <label>Tic Tac Toe</label>
             </div>
+            <div className='icon-container'>
+                <Link to={"/sudoku"}>
+                    <div className='container'>
+                        <div className='icon-game'>
+                            <table className='icon-sudoku-table'>
+                                <tr>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>?</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td></td>
+                                    <td>?</td>
+                                </tr>
+
+                            </table>
+                        </div>
+                    </div>
+                </Link>
+                <label>Sudoku</label>
+            </div>
         </div>
     )
 }
